@@ -33,10 +33,27 @@ if 'chat_history' not in st.session_state:
                                       "content": "You are a helpful chatbot for people who feel depressed or are having hurtful thoughts. You are there to help people with mental problems for phsycological support and emotional wellbeing. You will help them cope with thier situation, whatever that maybe. If they try to deviate the topic, bring them back to the topic of mental wellbeing. dont give your responses too long. make them short and consise."}, ]
 
 
-st.markdown('<h1 style="color: black;">Solace 🌙</h1>', unsafe_allow_html=True)
-st.markdown('<h3 style="color: black;">𝗦ervice 𝗢f 𝗟ove 𝗔nd 𝗖are for 𝗘motions</h3>', unsafe_allow_html=True)
-st.markdown('<h4 style="color: black;">I\'m a chatbot designed to care for your emotional well-being.<br>Talk to me about any problems you might have!</h4>', unsafe_allow_html=True)
+st.title("SOLACE 🌙")
+st.subheader("𝗦ervice 𝗢f 𝗟ove 𝗔nd 𝗖are for 𝗘motions")
+st.subheader("I'm a chatbot designed to care for your emotional well-being. Talk to me about any problems you might have!")
 user_input = st.chat_input("You:")
+
+st.markdown("""
+    <style>
+        #bb0e3299 {
+            text-align: center;
+            color: black;
+        }
+        #e7ae617f {
+            text-align: center;
+            color: black;
+        }
+        #i-m-a-chatbot-designed-to-care-for-your-emotional-well-being-talk-to-me-about-any-problems-you-might-have {
+            font-style: italic;
+            color: black;
+        }
+    </style> 
+    """, unsafe_allow_html=True)
 
 if user_input:
     st.session_state.chat_history.append({"role": "user", 'content': user_input})
