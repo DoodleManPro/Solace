@@ -15,7 +15,7 @@ st.markdown("""
         }
 
         .stApp {
-            background-image: url("https://img.freepik.com/free-photo/beautiful-outdoor-view-with-tropical-beach-sea_74190-6852.jpg");
+            background-image: url("https://marketplace.canva.com/EAGK_VGJ-wk/1/0/1600w/canva-purple-illustrative-lavender-desktop-wallpaper-IJjKe9JIOeM.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -69,9 +69,23 @@ if user_input:
 
 for msg in st.session_state.chat_history[1:]:
     if msg['role'] == 'user':
-        st.markdown(f'<div style="background-color: #e8be32; border-radius: 15px; padding: 10px; margin-bottom: 10px; margin-left: 500px; color: #000000;">'
+        st.markdown(f'<div style="background-color:#40605b; border-radius: 15px; padding: 10px; margin-bottom: 10px; margin-left: 500px; color: #ffffff;">'
                         f'<b>You:</b> {msg["content"]}</div>', unsafe_allow_html=True)
     else:
-        st.markdown(f'<div style="background-color: #F1F0F0; border-radius: 15px; padding: 10px; margin-bottom: 10px; margin-right: 300px; color: #000000;">'
+        st.markdown(f'<div style="background-color: #352d3f; border-radius: 15px; padding: 10px; margin-bottom: 10px; margin-right: 300px; color: #ffffff;">'
                         f'<b>Bot:</b> {msg["content"]}</div>', unsafe_allow_html=True)
         
+#------BREATHING----
+st.markdown("""
+     <div style="position: fixed; top:30%; right: 300px; transform: translateY(-50%); z-index: 999;">
+        <a href="https://mindfuldevmag.com/breathing-timer/" target="_blank" style="text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/128/2451/2451263.png" 
+                 alt="Breathing Icon" width="120" height="120" 
+                        transition: transform 0.2s ease-in-out;" 
+                 onmouseover="this.style.transform='scale(1.1)'" 
+                 onmouseout="this.style.transform='scale(1)'">
+                 <p style="margin-top: 8px; color: black; font-size: 20px;">𝑵𝒆𝒆𝒅 𝒂 𝒃𝒓𝒆𝒂𝒕𝒉𝒆𝒓?</p>
+        </a>
+    </div>
+""", unsafe_allow_html=True)
+
