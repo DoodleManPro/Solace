@@ -89,3 +89,16 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+     <div style="position: fixed; top:60%; right: 300px; transform: translateY(-50%); z-index: 999;">
+        <a href="https://soundcloud.com/soothingrelaxation" target="_blank" style="text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/128/727/727245.png" 
+                 alt="Music Icon" width="120" height="120" 
+                 style="transition: transform 0.2s ease-in-out;" 
+                 onmouseover="this.style.transform='scale(1.1)'" 
+                 onmouseout="this.style.transform='scale(1)'">
+            <p style="margin-top: 8px; color: black; font-size: 20px;">𝑵𝒆𝒆𝒅 𝒎𝒆𝒍𝒐𝒅𝒊𝒆𝒔?</p>
+        </a>
+    </div>
+""", unsafe_allow_html=True)
+
